@@ -3,7 +3,7 @@ import React from "react";
 import SearchFormReset from "./SearchFormReset";
 import { Search } from "lucide-react";
 
-const SearchForm = ({query}:{query?:string}) => {
+const SearchForm = ({ query }: { query?: string }) => {
   return (
     <Form action="/" scroll={false} className="search-form text-black">
       <input
