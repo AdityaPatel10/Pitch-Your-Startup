@@ -1,5 +1,8 @@
-import StartupCards from "@/components/StartupCards";
+import StartupCards, { StartupCardType } from "@/components/StartupCards";
 import SearchForm from "../../components/SearchForm";
+import { client } from "@/sanity/lib/client";
+import { STARTUP_QUERY } from "@/sanity/lib/query";
+import { stringify } from "querystring";
 
 export default async function Home({
   searchParams,
@@ -8,20 +11,23 @@ export default async function Home({
 }) {
   const query = (await searchParams).query;
 
-  const startups = [
-    {
-      _createdAt: new Date(),
-      title: "AgriTech Solutions",
-      description:
-        "Revolutionizing farming with AI-powered crop monitoring and precision irrigation systems.",
-      _id: "1",
-      author: { _id: 101, name: "GreenFuture Labs" },
-      views: 154,
-      image:
-        "https://src.n-ix.com/uploads/2024/03/21/ec4134ff-810d-4c4e-b60a-d57706b5293e.webp",
-      category: "Agriculture Tech",
-    },
-  ];
+  const startups = await client.fetch(STARTUP_QUERY);
+
+  console.log(stringify(startups));
+  // const startups = [
+  //   {
+  //     _createdAt: new Date(),
+  //     title: "AgriTech Solutions",
+  //     description:
+  //       "Revolutionizing farming with AI-powered crop monitoring and precision irrigation systems.",
+  //     _id: "1",
+  //     author: { _id: 101, name: "GreenFuture Labs" },
+  //     views: 154,
+  //     image:
+  //       "https://src.n-ix.com/uploads/2024/03/21/ec4134ff-810d-4c4e-b60a-d57706b5293e.webp",
+  //     category: "Agriculture Tech",
+  //   },
+  // ];
   return (
     <>
       <section className="pink_container">
