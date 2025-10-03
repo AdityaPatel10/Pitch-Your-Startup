@@ -3,6 +3,7 @@ import SearchForm from "../../components/SearchForm";
 import { client } from "@/sanity/lib/client";
 import { STARTUP_QUERY } from "@/sanity/lib/query";
 import { stringify } from "querystring";
+import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 
 export default async function Home({
   searchParams,
@@ -11,9 +12,10 @@ export default async function Home({
 }) {
   const query = (await searchParams).query;
 
-  const startups = await client.fetch(STARTUP_QUERY);
+  // const startups = await client.fetch(STARTUP_QUERY);
+  const { data: startups } = await sanityFetch({ query: STARTUP_QUERY });
 
-  console.log(stringify(startups));
+  // console.log(stringify(startups));
   // const startups = [
   //   {
   //     _createdAt: new Date(),
@@ -54,6 +56,7 @@ export default async function Home({
           )}
         </ul>
       </section>
+      <SanityLive />
     </>
   );
 }
