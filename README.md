@@ -42,3 +42,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 for shema extract :- npx sanity@latest schema extract --path=./sanity/extract.json
 npx sanity@latest typegen generate
 use npm run typegen instead
+
+//for live content API
+run :- npm i server-only //specific module can only be used in server component 
