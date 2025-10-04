@@ -35,20 +35,22 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
 ## Command Prompts
 
 ## for sanity type gen
+
 for shema extract :- npx sanity@latest schema extract --path=./sanity/extract.json
 npx sanity@latest typegen generate
 use npm run typegen instead
 
 ## for live content API
-run :- npm i server-only //specific module can only be used in server component 
 
+run :- npm i server-only //specific module can only be used in server component
 
 ## To parse or convert markdown into html string we need to install an additional package "markdown-it"
 
 run :- npm install markdown-it
 
 ## FOR MAKING SOMETHING DYNAMIC IN PPR YOU HAVE TO WRAP IT IN "Suspense"
+
+`after allows you to schedule work to be executed after a response (or prerender) is finished. This is useful for tasks and other side effects that should not block the response, such as logging and analytics.`
