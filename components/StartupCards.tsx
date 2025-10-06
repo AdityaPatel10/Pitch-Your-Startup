@@ -42,7 +42,7 @@ const StartupCards = ({ startup }: { startup: StartupCardType }) => {
         </div>
         <Link href={`user/${author?._id}`}>
           <Image
-            src="https://placehold.co/48x48"
+            src={author?.image || "/placeholder-avatar.png"}
             alt="placeholder"
             width={48}
             height={48}
