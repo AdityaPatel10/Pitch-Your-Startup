@@ -54,3 +54,11 @@ run :- npm install markdown-it
 ## FOR MAKING SOMETHING DYNAMIC IN PPR YOU HAVE TO WRAP IT IN "Suspense"
 
 `after allows you to schedule work to be executed after a response (or prerender) is finished. This is useful for tasks and other side effects that should not block the response, such as logging and analytics.`
+
+
+
+
+typegen:- if you use typescript for the frontend or web application 
+Graph relational object query
+
+## `NEXTJS CACHING IS IMPORTANT!!`
