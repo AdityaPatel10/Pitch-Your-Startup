@@ -39,7 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## for sanity type gen
 
-for shema extract :- npx sanity@latest schema extract --path=./sanity/extract.json
+for schema extract :- npx sanity@latest schema extract --path=./sanity/extract.json
 npx sanity@latest typegen generate
 use npm run typegen instead
 
@@ -62,3 +62,11 @@ typegen:- if you use typescript for the frontend or web application
 Graph relational object query
 
 ## `NEXTJS CACHING IS IMPORTANT!!`
+
+## To Create MarkDown Component 
+
+MarkDown Editor
+
+Run:- npm i !uiw/react-md-editor
+
+## For the Validation we will use the `Zod`
