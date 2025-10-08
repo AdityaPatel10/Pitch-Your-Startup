@@ -12,7 +12,7 @@ export const formSchema = z.object({
   category: z
     .string()
     .min(3, { message: "Category must contains at least 3 characters" })
-    .max(20),
+    .max(50),
   link: z
     .string()
     .url({ message: "Please enter a valid url " })
