@@ -70,3 +70,6 @@ MarkDown Editor
 Run:- npm i !uiw/react-md-editor
 
 ## For the Validation we will use the `Zod`
+
+## Import `slugify` for creating the slug
+run:- npm i slugify
