@@ -38,7 +38,6 @@ const StartupForm = () => {
 
       const result = await createPitch(prevState, formData, pitch);
       console.log(result);
-      
 
       if (result.status === "SUCCESS") {
         toast({

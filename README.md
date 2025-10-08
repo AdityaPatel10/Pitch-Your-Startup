@@ -55,15 +55,12 @@ run :- npm install markdown-it
 
 `after allows you to schedule work to be executed after a response (or prerender) is finished. This is useful for tasks and other side effects that should not block the response, such as logging and analytics.`
 
-
-
-
-typegen:- if you use typescript for the frontend or web application 
+typegen:- if you use typescript for the frontend or web application
 Graph relational object query
 
 ## `NEXTJS CACHING IS IMPORTANT!!`
 
-## To Create MarkDown Component 
+## To Create MarkDown Component
 
 MarkDown Editor
 
@@ -72,4 +69,5 @@ Run:- npm i !uiw/react-md-editor
 ## For the Validation we will use the `Zod`
 
 ## Import `slugify` for creating the slug
+
 run:- npm i slugify
