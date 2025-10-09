@@ -22,7 +22,6 @@ export default async function Home({
 
   const session = await auth();
   console.log(session?.id);
-  
 
   // console.log(stringify(startups));
   // const startups = [
@@ -57,7 +56,7 @@ export default async function Home({
         </p>
         <ul className="mt-7 card_grid">
           {startups?.length > 0 ? (
-            startups.map((startup: StartupCardType) => (
+            (startups as StartupCardType[]).map((startup: StartupCardType) => (
               <StartupCards key={startup?._id} startup={startup} />
             ))
           ) : (
