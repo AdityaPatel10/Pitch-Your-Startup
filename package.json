@@ -24,7 +24,7 @@
     "@radix-ui/react-toast": "^1.2.15",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.10.2",
-    "@sentry/nextjs": "^10.18.0",
+    "@sentry/nextjs": "^10.19.0",
     "@tailwindcss/typography": "^0.5.19",
     "@uiw/react-md-editor": "^4.0.8",
     "class-variance-authority": "^0.7.1",
