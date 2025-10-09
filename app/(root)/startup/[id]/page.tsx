@@ -7,7 +7,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
 import markdownit from "markdown-it";
 import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -26,9 +25,8 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
     client.fetch(PLAYLIST_BY_SLUG_QUERY, { slug: "editor-picks" }),
   ]);
 
-  const editorPosts: StartupCardType[] = (playlist?.select as unknown as StartupCardType[]) || [];
-
-  console.log(editorPosts);
+  const editorPosts: StartupCardType[] =
+    (playlist?.select as unknown as StartupCardType[]) || [];
 
   if (!post) return notFound();
 
