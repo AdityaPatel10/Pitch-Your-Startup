@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
+// @ts-ignore: allow side-effect CSS import without type declarations
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -51,7 +51,7 @@ const workSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "YC Directory",
+  title: "PitchUp",
   description: "Pitch, Vote & Grow",
 };
 
