@@ -2,7 +2,6 @@ import { auth, signOut, signIn } from "@/auth";
 import { BadgePlus, LogOut } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const Navbar = async () => {
