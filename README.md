@@ -71,3 +71,8 @@ Run:- npm i !uiw/react-md-editor
 ## Import `slugify` for creating the slug
 
 run:- npm i slugify
+
+"
+<div align = "center">
+
+</div>

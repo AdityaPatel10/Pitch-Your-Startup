@@ -26,6 +26,7 @@ export default async function Home({
   return (
     <>
       <section className="pink_container">
+        <p className="tag">pitch, vote & grow</p>
         <h1 className="heading">
           pitch your startup, connect with entrepreneurs
         </h1>
