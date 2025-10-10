@@ -1,5 +1,5 @@
 import { auth, signOut, signIn } from "@/auth";
-import { BadgePlus, LogOut } from "lucide-react";
+import { BadgePlus, LogIn, LogOut } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
@@ -17,7 +17,9 @@ const Navbar = async () => {
           {session && session?.user ? (
             <>
               <Link href="/startup/create">
-                <span className="max-sm:hidden">Create</span>
+                <span className="max-sm:hidden text-white bg-[#739468] py-3 px-4 rounded cursor-pointer">
+                  Create
+                </span>
                 <BadgePlus className="size-6 sm:hidden" />
               </Link>
 
@@ -29,7 +31,9 @@ const Navbar = async () => {
                 }}
               >
                 <button type="submit">
-                  <span className="max-sm:hidden text-red-500">Logout</span>
+                  <span className="max-sm:hidden text-white bg-red-500 py-3 px-4 rounded cursor-pointer">
+                    Logout
+                  </span>
                   <LogOut className="size-6 sm:hidden text-red-500" />
                 </button>
               </form>
@@ -51,7 +55,12 @@ const Navbar = async () => {
                 await signIn("github");
               }}
             >
-              <button type="submit">Login</button>
+              <button type="submit">
+                <span className="max-sm:hidden bg-[#739468] py-3 px-4 rounded cursor-pointer text-white">
+                  Login
+                </span>
+                <LogIn className="size-6 sm:hidden text-[#739468]"/>
+              </button>
             </form>
           )}
         </div>
