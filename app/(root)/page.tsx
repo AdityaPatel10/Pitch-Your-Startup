@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import StartupCards, { StartupCardType } from "@/components/StartupCards";
 import SearchForm from "../../components/SearchForm";
 import { STARTUP_QUERY } from "@/sanity/lib/query";
