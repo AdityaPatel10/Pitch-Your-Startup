@@ -150,4 +150,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 8. Import `slugify` for creating the slug
 - run:- npm i slugify
+
+9. learn about action server and the hook from the official documentation
 "
